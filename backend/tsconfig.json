@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",                      // output as ESM
+    "moduleResolution": "bundler",          // resolution mode compatible with Bun
+    "allowJs": true,
+    "allowImportingTsExtensions": true,     // allow .ts/.mts imports with extensions
+    "verbatimModuleSyntax": true,           // preserve import/export syntax (no transform)
+    "moduleDetection": "force",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,                      // don’t output JS — Bun runs .ts directly
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

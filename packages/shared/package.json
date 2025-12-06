@@ -1,0 +1,18 @@
+{
+  "name": "@repo/shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "dependencies": {
+    "@orpc/contract": "^1.12.2",
+    "zod": "^3.23.0"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
